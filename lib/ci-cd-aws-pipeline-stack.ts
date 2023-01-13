@@ -15,6 +15,7 @@ export class CiCdAwsPipelineStack extends cdk.Stack {
         input: CodePipelineSource.gitHub('SahilGupta2810/ci-cd-aws-pipeline','release-1'),
         commands: [
           'npm i',
+          'npm i -g aws-cdk',
           'npm run build',
           'cdk synth'
         ]
