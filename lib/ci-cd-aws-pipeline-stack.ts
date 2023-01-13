@@ -23,7 +23,7 @@ export class CiCdAwsPipelineStack extends cdk.Stack {
 
     const testingStage = pipeline.addStage(new MyPipelineAppStage(this, "test"));
 
-    const prodStage = pipeline.addStage(new MyPipelineAppStage(this, "prod"));
+    //const prodStage = pipeline.addStage(new MyPipelineAppStage(this, "prod"));
 
   }
 }
