@@ -9,7 +9,7 @@ export class CiCdAwsPipelineStack extends cdk.Stack {
     super(scope, id, props);
 
     new cdpipeline.CodePipeline(this, 'Pipeline', {
-      pipelineName: "CDK Test Pipeline",
+      pipelineName: "Test_Pipeline_CDK",
       synth : new ShellStep('Synth', {
         input: CodePipelineSource.gitHub('SahilGupta2810/ci-cd-aws-pipeline','release-1'),
         commands: [
